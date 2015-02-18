@@ -1,0 +1,163 @@
+import hk;
+import hk.enterprise;
+import hk.enterprise.logistics;
+import hk.enterprise.logistics.local;
+import hk.enterprise.logistics.local.operations;
+import hk.enterprise.logistics.local.operations.web;
+import hk.enterprise.logistics.local.operations.web.online;
+import hk.enterprise.logistics.local.operations.web.online.responsive;
+import hk.enterprise.logistics.local.operations.web.online.responsive.less;
+import hk.enterprise.logistics.local.operations.web.online.responsive.less.dijits;
+
+public class Main {
+    public static void main(String[] args) {
+        /* Write hello */
+        OutputLetterHFactory outputLetterHFactoryInst = new OutputLetterHFactory(Routing.STDOUT);
+        outputLetterHFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterEFactory outputLetterEFactoryInst = new OutputLetterEFactory(Routing.STDOUT);
+        outputLetterEFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterLFactory outputLetterLFactoryInst = new OutputLetterLFactory(Routing.STDOUT);
+        outputLetterLFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterLFactory outputLetterLFactoryInst = new OutputLetterLFactory(Routing.STDOUT);
+        outputLetterLFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterOFactory outputLetterOFactoryInst = new OutputLetterOFactory(Routing.STDOUT);
+        outputLetterOFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        /*Write space*/
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        currentPosition.applyValueAdvancement("increaseValueByOne.xml");
+
+        OutputSpaceFactory outputSpaceFactoryInst = new OutputSpaceFactory(Routing.STDOUT);
+        outputSpaceFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerReduction(--currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerReduction(--currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerReduction(--currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerReduction(--currentPosition);
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerReduction(--currentPosition);
+
+        /*Write world*/
+        OutputLetterWFactory outputLetterWFactoryInst = new OutputLetterWFactory(Routing.STDOUT);
+        outputLetterWFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterOFactory outputLetterOFactoryInst = new OutputLetterOFactory(Routing.STDOUT);
+        outputLetterOFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterRFactory outputLetterRFactoryInst = new OutputLetterRFactory(Routing.STDOUT);
+        outputLetterRFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterLFactory outputLetterLFactoryInst = new OutputLetterLFactory(Routing.STDOUT);
+        outputLetterLFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+
+        SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+        SACC.applyPointerAdvancement(++currentPosition);
+
+        OutputLetterDFactory outputLetterDFactoryInst = new OutputLetterDFactory(Routing.STDOUT);
+        outputLetterDFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+    }
+}
