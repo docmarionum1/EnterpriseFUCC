@@ -3,7 +3,7 @@ Enterprise Framework Unifying Cloud Code (FUCC)
 
 Enterprise FUCC is a new value-added agile framework for bootstrapping your cloud presence.  It supports a multitude of paradigms so that you don't work for EFUCC - EFUCC works for you!
 
-Try a demo right now - no credit card required! (http://jeremyneiman.com/EFUCC/)
+[Try a demo right now - no credit card required!] (http://jeremyneiman.com/EFUCC/)
 
 Specification V. 0.3.2
 ----------------------
