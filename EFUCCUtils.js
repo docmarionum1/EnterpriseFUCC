@@ -116,3 +116,12 @@ function convertBrainFucktoFUCC(code) {
 	output += programEnd
 	return output;
 }
+
+function loadCodeExample() {
+	var href = 'examples/' + $("#exampleDropdown").val();
+	$.get(href, function(c) {
+		$("#code").val(c);
+	});
+};
+
+	

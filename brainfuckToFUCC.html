@@ -3,8 +3,16 @@
 <h1>Enterprise Framework Unifying Cloud Code Online Cloud Brainfuck Converter</h1>
 
 <h2>Code</h2>
+<span style="float: right; margin-top:20px;">
+    Choose an example:
+    <select id="exampleDropdown">
+        <option value="hello_world_1.bf">Hello World</option>
+        <option value="fibonacci.bf">Fibonacci</option>
+        <option value="squares.bf">Squares</option>
+    </select>    
+</span>
 <textarea id="code" style="width: 100%; height: 50%;">
-++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+
 </textarea>
 
 <button id="button">Convert to FUCC</button>
@@ -16,10 +24,12 @@
 
 <script>
 $(function() {
-    $("#result").val(convertBrainFucktoFUCC($("#code").val()));
-
     $("#button").click(function() {
         $("#result").val(convertBrainFucktoFUCC($("#code").val()));
     });
+
+    $("#exampleDropdown").change(loadCodeExample);
+
+    loadCodeExample();
 });
 </script>

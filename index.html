@@ -2,22 +2,19 @@
 <script src="EFUCCUtils.js"></script>
 <h1>Enterprise Framework Unifying Cloud Code Online Cloud IDE</h1>
 
-<h2>Code</h2>
+<h2 style="float: left;">Code</h2>
+<span style="float: right; margin-top:20px;">
+    Choose an example:
+    <select id="exampleDropdown">
+        <option value="hello_world_1.fucc">Hello World</option>
+        <option value="hello_world_2.fucc">Short Hello World</option>
+        <option value="hello_world_3.fucc">How about another Hello World?</option>
+        <option value="fibonacci.fucc">1,1,2,3,5</option>
+    </select>    
+</span>
 <textarea id="code" style="width: 100%; height: 50%;">
-import hk;
-
-public class Main {
-    public static void main(String[] args) {
-        while (SACC.RecurranceCheck(SACC.getCurrentPointerValue(0))) {
-            OutputFactory outputFactoryInst = new OutputFactory(Routing.STDOUT);
-            outputFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
-            SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
-            currentPosition.applyValueReduction("decreaseValueByOne.xml");  
-        }
-    }
-}
 </textarea>
-
+<br/><br/>
 <button id="button">Run Code</button>
 
 <h2>Result</h2>
@@ -27,11 +24,13 @@ public class Main {
 
 <script>
 $(function() {
-    runProgram($("#code").val(), stdout);
-
     $("#button").click(function() {
         $("#result").val("");
         runProgram($("#code").val(), stdout);
     });
+
+    $("#exampleDropdown").change(loadCodeExample);
+
+    loadCodeExample();
 });
 </script>
