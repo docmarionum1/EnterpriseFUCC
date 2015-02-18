@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="EFUCCUtils.js"></script>
+<h1>Enterprise Framework Unifying Cloud Code Online Cloud Brainfuck Converter</h1>
+
+<h2>Code</h2>
+<textarea id="code" style="width: 100%; height: 50%;">
+++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+</textarea>
+
+<button id="button">Convert to FUCC</button>
+
+<h2>Result</h2>
+<textarea id="result" style="width: 100%; height: 25%;"></textarea>
+
+
+
+<script>
+$(function() {
+    $("#result").val(convertBrainFucktoFUCC($("#code").val()));
+
+    $("#button").click(function() {
+        $("#result").val(convertBrainFucktoFUCC($("#code").val()));
+    });
+});
+</script>

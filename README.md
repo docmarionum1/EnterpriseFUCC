@@ -71,3 +71,14 @@ Where F is a valid factory, f is an instance of that factory, R is a dataflow sp
 	
 To ensure maximum performability, `f` is garbage collected after one line, so a new instance must be created for each use.
 	
+	
+Recurrance Module
+-----------------
+
+To create a recurrance use:
+
+	while (SACC.RecurranceCheck(SACC.getCurrentPointerValue(0))) {
+		//Statements
+	}
+
+This will continue to execute statements while the value at the current SACC pointer is not 0.

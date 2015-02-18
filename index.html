@@ -1,0 +1,37 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="EFUCCUtils.js"></script>
+<h1>Enterprise Framework Unifying Cloud Code Online Cloud IDE</h1>
+
+<h2>Code</h2>
+<textarea id="code" style="width: 100%; height: 50%;">
+import hk;
+
+public class Main {
+    public static void main(String[] args) {
+        while (SACC.RecurranceCheck(SACC.getCurrentPointerValue(0))) {
+            OutputFactory outputFactoryInst = new OutputFactory(Routing.STDOUT);
+            outputFactoryInst.STDOUT.write.character(SACC.getCurrentPointerValue(0));
+            SACCPointerPosition currentPosition = SACC.getCurrentPointerPosition();
+            currentPosition.applyValueReduction("decreaseValueByOne.xml");  
+        }
+    }
+}
+</textarea>
+
+<button id="button">Run Code</button>
+
+<h2>Result</h2>
+<textarea id="result" style="width: 100%; height: 25%;"></textarea>
+
+
+
+<script>
+$(function() {
+    runProgram($("#code").val(), stdout);
+
+    $("#button").click(function() {
+        $("#result").val("");
+        runProgram($("#code").val(), stdout);
+    });
+});
+</script>
