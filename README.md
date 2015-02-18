@@ -5,6 +5,11 @@ Enterprise FUCC is a new value-added agile framework for bootstrapping your clou
 
 [Try a demo right now - no credit card required!] (http://jeremyneiman.com/EFUCC/)
 
+What if my comapny is already locked into Brainfuck?
+----------------------------------------------------
+
+No problem!  We can [automatically convert] (http://jeremyneiman.com/EFUCC/brainfuckToFUCC.html) all of your current codebase from brainfuck to FUCC at no extra charge!
+
 Specification V. 0.3.2
 ----------------------
 
